@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to right, #000, #444);
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    animation: slide-down 1.5s ease;
+}
+
+main {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    animation: fade-in 2s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ff4500;
+    transform: scale(1.1);
+}
+
+#start-html-btn,#start-css-btn,#start-js-btn{
+    margin-top: 7px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background: #555;
+    transform: scale(1.01);
+}
+
+ul li.selected {
+    background: #ffa500; 
+    color: black;
+    transform: scale(1.03);
+}
+
+/* Timer styles */
+#timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+input{
+  outline:none
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.hidden {
+    display: none;
+}

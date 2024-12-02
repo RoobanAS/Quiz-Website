@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Quiz Competition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Technical Quiz Competition</h1>
+    </header>
+    <main>
+        <section id="sign-up-container" class="fade-in">
+            <h2>Sign Up</h2>
+            <form id="sign-up-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section id="quiz-container" class="hidden fade-in">
+            <div id="quiz-intro" class="fade-in">
+                <h2>Welcome to the Quiz</h2>
+                <p>Test your knowledge on HTML, CSS, and JavaScript!</p>
+                <p>Select a section to get started:</p>
+                <button id="start-html-btn">HTML Quiz</button>
+                <button id="start-css-btn">CSS Quiz</button>
+                <button id="start-js-btn">JavaScript Quiz</button>
+            </div>
+            <div id="quiz-questions" class="hidden fade-in">
+                <div id="timer">Time left: <span id="time-left">20</span> seconds</div>
+                <div id="question-container">
+                    <h3 id="question"></h3>
+                    <ul id="options"></ul>
+                </div>
+                <button id="next-btn" class="hidden">Next</button>
+            </div>
+            <div id="quiz-results" class="hidden fade-in">
+                <h2>Your Results</h2>
+                <p id="score"></p>
+                <button id="view_answer-btn">View Answers</button>
+                <button id="restart-btn">Restart Quiz</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Technical Quiz Competition</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
